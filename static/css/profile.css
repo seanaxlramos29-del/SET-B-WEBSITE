@@ -26,9 +26,6 @@
     transition-duration: 0.4s;
 }
 
-
-
-
 .profile img {
     width: 100px;
     height: 100px;
@@ -148,9 +145,4 @@ button {
 button:hover {
     background-image: linear-gradient(to right, #1E21DE, #6E70E3);
     color: white;
-}
-
-
-.profile:hover {
-    box-shadow: 0 8px 16px 0 #d9daec;
 }

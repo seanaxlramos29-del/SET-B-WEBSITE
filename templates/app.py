@@ -236,6 +236,10 @@ def home_page():
 def about():
     return render_template('about.html')
 
+@app_bp.route('/gallery')
+def gallery():
+    return render_template('gallery.html')
+
 
 ########### CAREER INTEREST ###########
 
@@ -402,5 +406,6 @@ def edit(student_id):
 
 @app_bp.route('/delete/<int:student_id>', methods=['POST'])
 def delete(student_id):
+    global students           
     students.pop(student_id, None)
     return redirect(url_for('app_bp.home_page'))

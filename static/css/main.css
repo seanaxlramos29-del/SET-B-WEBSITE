@@ -7,14 +7,12 @@
 .logosec {
     display: flex;
     justify-content: center;
-    min-height: 780px;
+    min-height: 785px;
     align-items: center;
     flex-direction: column;
     position: relative;
     background: white;
     overflow: hidden;
-
-
     animation: zoomFadeIn 1.2s ease forwards;
 }
 

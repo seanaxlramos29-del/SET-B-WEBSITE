@@ -18,16 +18,21 @@
                 <img src="{{ url_for('static', filename='image/icct.png') }}" alt="ICCT Logo">
             </div>
 
-
-
-            <div class="nav-item career">
+            <div class="navs-item career">
                 <a href="{{ url_for('app_bp.career_page') }}">
                     <i class='bx bx-briefcase'></i>
                     <span>Career</span>
                 </a>
             </div>
 
-            <div class="nav-item about">
+            <div class="navs-item about">
+                <a href="{{ url_for('app_bp.gallery') }}">
+                    <i class='bx bx-image'></i>
+                    <span>Gallery</span>
+                </a>
+            </div>
+
+            <div class="navs-item about">
                 <a href="{{ url_for('app_bp.about') }}">
                     <i class='bx bx-info-circle'></i>
                     <span>About Us</span>

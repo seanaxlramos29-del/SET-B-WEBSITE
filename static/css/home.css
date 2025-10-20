@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 55px;
+    width: 70px;
     height: 100%;
     border-radius: 0px 45px 45px 0px;
     background-color: #1E21DE;
@@ -25,8 +25,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .sidebar:hover {
@@ -36,15 +36,16 @@ body {
 .sidebar .logo img {
     width: 50px;
     height: 50px;
-    margin: 15px 50px;
+    margin-top: 15px;
     border-radius: 50%;
 }
 
-.nav-item {
+.navs-item {
+    margin-top: 15px;
     width: 100%;
 }
 
-.nav-item a {
+.navs-item a {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -55,24 +56,21 @@ body {
     white-space: nowrap;
 }
 
-
-.nav-item a:hover {
+.navs-item a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
-
-.nav-item i {
-    font-size: 22px;
+.navs-item i {
+    font-size: 25px;
 }
 
-
-.nav-item span {
+.navs-item span {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.sidebar:hover .nav-item span {
+.sidebar:hover .navs-item span {
     opacity: 1;
     visibility: visible;
 }
@@ -103,7 +101,7 @@ header h1 {
     align-items: center;
     border-radius: 50px;
     padding: 8px 20px;
-    margin-left: 60px;
+    margin-left: 80px;
     opacity: .5;
     transition: all 0.4s ease;
 }
@@ -132,15 +130,13 @@ input::placeholder {
     padding-left: 5px;
 }
 
-
-
 /* STUDENT INFORMATION SECTION */
 
 .Student-info {
     display: grid;
     gap: 10px 10px;
     align-items: center;
-    margin-left: 75px;
+    margin-left: 80px;
     border: 0px solid #e4d6d6;
     border-radius: 12px;
     background: #fff;

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background: #343435;
+    display: flex;
+}
+
+a {
+    position: fixed;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #1E21DE, #6E70E3);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin-right: 5px;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+p {
+    position: fixed;
+    margin-left: 83vh;
+    font-size: 70px;
+    color: white;
+    animation: glow 10s linear infinite;
+}
+
+.all {
+    margin-top: 180px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 650px;
+    justify-items: stretch;
+    animation: slide 30s linear infinite;
+}
+
+.all img {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 11px 15px 30px -10px rgba(241, 236, 236, 0.75);
+}
+
+@keyframes slide {
+    to {
+        translate: calc(-10 * 780px);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow:
+            0 0 5px #6666ff,
+            0 0 10px #6666ff,
+            0 0 15px #6666ff;
+    }
+
+    10% {
+        text-shadow:
+            0 0 8px #00c8ff;
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px #f8f8f8,
+            0 0 10px #f8f8f8,
+            0 0 15px #f8f8f8;
+    }
+
+    75% {
+        text-shadow:
+            0 0 10px #0065f1;
+    }
+
+    100% {
+        text-shadow:
+            0 0 5px #00fbff,
+            0 0 10px #00fbff,
+            0 0 15px #00fbff;
+    }
+}
